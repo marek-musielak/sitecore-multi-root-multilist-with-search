@@ -29,7 +29,7 @@ namespace MyAssembly.MyNamespace
             {
                 var locationValue = SourceParts["StartSearchLocation"];
 
-                if (locationValue != null && locationValue.Contains('|'))
+                if (locationValue != null)
                 {
                     GetResult().Add(filterName, MakeValueQueryableList(locationValue));
                     completed = true;
